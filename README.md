@@ -1,7 +1,7 @@
 # Super Galactic Age Calculator 1_11_19
 
-#### A program that calculates your age on other planets
 
+#### A program that calculates your age on other planets
 
 
 ## Description
@@ -27,9 +27,7 @@ This is a program that will calculate your age on the planets Mercury, Venus, Ma
 * To test: npm run test
 
 
-
 ## Known Bugs
-
 
 
 ## Support and contact details
