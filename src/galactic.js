@@ -6,6 +6,7 @@ export class Galactic {
         this.exactAge = this.earthAge(this.birthday);
         this.age = Math.floor(this.exactAge);
         this.timeLeft = (this.earthLifeExpectancy - this.exactAge);
+        this.lifeExpectance = this.earthLifeExpectancy();
     }
 
     //These functions determine age on each planet
