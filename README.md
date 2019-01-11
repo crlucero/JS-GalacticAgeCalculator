@@ -28,7 +28,7 @@ This is a program that will calculate your age on the planets Mercury, Venus, Ma
 
 
 ## Known Bugs
-
+N/A
 
 ## Support and contact details
 
