@@ -1,5 +1,5 @@
 export class Galactic {
-    constructor(birthday) {
+    constructor(birthday, gender, continent) {
         this.birthday = new Date(birthday);
         this.continent = continent;
         this.gender = gender;
@@ -11,8 +11,8 @@ export class Galactic {
     //These functions determine age on each planet
     earthAge(birthday) {
         let today = new Date();
-        let myAge = (today - birthday);
-        return myAge;
+        let myAge = Math.abs(today - birthday);
+        return myAge / 3.154e+10;
     }
 
     mercuryAge() {
@@ -26,12 +26,12 @@ export class Galactic {
     }
 
     marsAge() {
-        let ageOnMars = this.exactAge * 1.88;
+        let ageOnMars = this.exactAge / 1.88;
         return Math.floor(ageOnMars);
     }
 
     jupiterAge() {
-        let ageOnJupiter = this.exactAge * 11.86;
+        let ageOnJupiter = this.exactAge / 11.86;
         return Math.floor(ageOnJupiter);
     }
 
@@ -46,12 +46,12 @@ export class Galactic {
     }
 
     marsTimeLeft() {
-        let timeLeftMars = this.timeLeft * 1.88;
+        let timeLeftMars = this.timeLeft / 1.88;
         return timeLeftMars;
     }
 
     jupiterTimeLeft() {
-        let timeLeftJupiter = this.time * 11.86;
+        let timeLeftJupiter = this.time / 11.86;
         return timeLeftJupiter;
     }
 

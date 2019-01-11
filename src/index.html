@@ -1,13 +1,46 @@
 <!DOCTYPE html>
 <html>
   <head>
+  <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" rel="stylesheet" type="text/css">
+  <link href="https://fonts.googleapis.com/css?family=Monda" rel="stylesheet">
     <title>Galactic Age Calculator</title>
   </head>
   <body>
-    <h1>Check your age on other planets</h1>
-    <form id="">
-      <button type="submit" id="button">Submit</button>
-    </form>
+    <div class="container">
 
+      <h1>Galactic Age</h1>
+
+        <div class="col-md-4">
+          <div class="form-group">
+            <label for="birthday">Enter your date of birth </label>
+            <input type="date" class ="form-control" name="birthday" id="birthday">
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="form-group" id="gender">
+            <label for="gender">Select your gender: </label>
+            <input type="radio" value="female" name="gender">
+            <label for="female">Female</label>
+            <input type="radio" value="male" name="gender">
+            <label for="male">Male</label>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="form-group">
+            <label for="continent">Select the region of Earth you live on</label>
+            <select id="continent">
+              <option value="North America">North America</option>
+              <option value="South America">South America</option>
+              <option value="Europe">Europe</option>
+              <option value="Asia">Asia</option>
+              <option value="Africa">Africa</option>
+              <option value="Oceania">Oceania</option>
+            </select>
+          </div>
+        </div>
+
+
+      
+    </div>
   </body>
 </html>
