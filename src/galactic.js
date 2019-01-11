@@ -1,10 +1,11 @@
 export class Galactic {
     constructor(birthday) {
         this.birthday = new Date(birthday);
-        this.home = home;
+        this.continent = continent;
         this.gender = gender;
         this.exactAge = this.earthAge(this.birthday);
-        this.age = Math.floor(this.exactAge)
+        this.age = Math.floor(this.exactAge);
+        this.timeLeft = (this.earthLifeExpectancy - this.exactAge);
     }
 
     //These functions determine age on each planet
@@ -34,13 +35,31 @@ export class Galactic {
         return Math.floor(ageOnJupiter);
     }
 
-   
+    mercuryTimeLeft() {
+        let timeLeftMercury = this.timeLeft / 0.24;
+        return timeLeftMercury;
+    }
+
+    venusTimeLeft() {
+        let timeLeftVenus = this.timeLeft / 0.62;
+        return timeLeftVenus;
+    }
+
+    marsTimeLeft() {
+        let timeLeftMars = this.timeLeft * 1.88;
+        return timeLeftMars;
+    }
+
+    jupiterTimeLeft() {
+        let timeLeftJupiter = this.time * 11.86;
+        return timeLeftJupiter;
+    }
 
     // These functions determine how much life a person has left on Earth
     // based on their current age, gender and what continet they live on.
     // If 'male' is true use avg age of 78, else use avg age of 80. 
     earthLifeExpectancy() {
-        switch(this.home) {
+        switch(this.continent) {
             case "North America": 
                 return this.gender === "male" ? 77 : 81;
 
