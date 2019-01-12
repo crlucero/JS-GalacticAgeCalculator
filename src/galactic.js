@@ -36,6 +36,8 @@ export class Galactic {
         return Math.floor(ageOnJupiter);
     }
 
+
+    // These functions calculate how much time left the user would have if they lived on other planets
     mercuryTimeLeft() {
         let timeLeftMercury = this.timeLeft / 0.24;
         return timeLeftMercury;
