@@ -5,7 +5,7 @@ export class Galactic {
         this.gender = gender;
         this.exactAge = this.earthAge(this.birthday);
         this.age = Math.floor(this.exactAge);
-        this.timeLeft = (this.earthLifeExpectancy - this.exactAge);
+        this.timeLeft = (this.earthLifeExpectancy() - this.exactAge);
         this.lifeExpectance = this.earthLifeExpectancy();
     }
 

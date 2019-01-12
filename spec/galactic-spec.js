@@ -27,13 +27,29 @@ describe ('Galactic', function() {
         expect(me.jupiterAge()).toEqual(2)
     });
 
-    //Object of user who lived longer than life expectancy for testing
+    it('should convert how many years user has left to live on other Mercury', function() {
+        expect(me.mercuryTimeLeft(220))
+    });
+
+    it('should convert how many years user has left to live on Venus', function() {
+        expect(me.venusTimeLeft(85))
+    });
+
+    it('should expect convert how many years a user has left to live on Mars', function() {
+        expect(me.marsTimeLeft(28))
+    });
+
+    it('should convert how many years a user has left to live on Jupiter', function() {
+        expect(me.jupiterTimeLeft(4))
+    });
+
+
     let secondToday = new Date();
-    let oldBirthday = secondToday.setFullYear(secondToday.getFullYear() - 90);
+    let oldBirthday = secondToday.setFullYear(secondToday.getFullYear() - 100);
     let shouldBeDead = new Galactic(oldBirthday, "female", "Oceania");
 
     it('should return the number of years a person has lived after their life expectancy on Earth', function() {
-        expect(Math.ceil(shouldBeDead.timeLeft)).toEqual(-10);
+        expect(Math.ceil(shouldBeDead.timeLeft)).toEqual(-20);
     });
     
 
