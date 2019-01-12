@@ -58,7 +58,8 @@ export class Galactic {
 
     // These functions determine how much life a person has left on Earth
     // based on their current age, gender and what continet they live on.
-    // If 'male' is true use avg age of 78, else use avg age of 80. 
+    // If 'male' is true use avg age on left
+    // If 'male' is false, use age on right 
     earthLifeExpectancy() {
         switch(this.continent) {
             case "North America": 
