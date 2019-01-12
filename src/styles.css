@@ -2,11 +2,11 @@
     display: none;
 }
 #planetAge, #planetTimeLeft {
-    background-color: rgba(100, 100, 100, 0.7);
     padding: 10px;
     border-radius: 5px;
 }
 body {
-    background-color: black;
+    background-color: rgb(184, 161, 161);
     font-family: 'Monda', sans-serif;
 }
+
