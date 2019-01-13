@@ -12,8 +12,8 @@ export class Galactic {
     //These functions determine age on each planet
     earthAge(birthday) {
         let today = new Date();
-        let myAge = Math.abs(today - birthday);
-        return myAge / 3.154e+10;
+        let myAge = (today - birthday);
+        return Math.floor(myAge / 3.154e+10);
     }
 
     mercuryAge() {
@@ -54,7 +54,7 @@ export class Galactic {
     }
 
     jupiterTimeLeft() {
-        let timeLeftJupiter = this.time / 11.86;
+        let timeLeftJupiter = this.timeLeft / 11.86;
         return timeLeftJupiter;
     }
 
