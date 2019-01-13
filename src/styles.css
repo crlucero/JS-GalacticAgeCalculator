@@ -4,9 +4,12 @@
 #planetAge, #planetTimeLeft {
     padding: 10px;
     border-radius: 5px;
+
 }
 body {
     background-color: rgb(48, 90, 138);
     font-family: 'Monda', sans-serif;
 }
+
+
 
